@@ -1,3 +1,5 @@
+###### Compile Pictures into Video ######
+
 The following unix/linux code turns a bunch of photos into a video with the specified parameters
 
 $mencoder -nosound -ovc lavc -lavcopts vcodec=mpeg4:aspect=16/9:vbitrate=8000000 -vf scale=1920:1080 -o tlcam.avi -mf type=jpeg:fps=24 mf://@stills.txt
